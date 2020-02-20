@@ -4,6 +4,8 @@ import './App.css';
 import { Switch, Route } from 'react-router-dom'
 import ShopPage from './pages/shop/shop'
 import Header from './components/herader/header'
+import SignInUp from './pages/sing-in-up/sign-in-up'
+
 
 const HatsPage = () => (
   <div>
@@ -18,6 +20,7 @@ function App() {
       <Switch>
         <Route exact path='/' component={HomePage}></Route>
         <Route path='/shop' component={ShopPage}></Route>
+        <Route path='/singIn' component={SignInUp}></Route>
       </Switch>
     </div>
   );
