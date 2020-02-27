@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import FormInput from '../form-input/form-input'
 import CustomButton from '../custom-button/custom-button'
-import { auth, createUserProfileDocument, createUserProfileDocment } from '../../firebase/firebase.util'
+import { auth, createUserProfileDocment } from '../../firebase/firebase.util'
 import './sign-up.scss'
 
 class SignUp extends Component{
@@ -21,7 +21,7 @@ class SignUp extends Component{
 
         const { displayName, email, password, confirmPassword} = this.state
 
-        if(password != confirmPassword){
+        if(password !== confirmPassword){
             alert('password did not match')
             return
         }
