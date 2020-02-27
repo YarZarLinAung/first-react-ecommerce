@@ -9,7 +9,7 @@ const Header = ({currentUser}) => (
     <div className='header'>
      {console.log(currentUser)}
         <Link className="logo-container" to='/'>
-            <Logo className='logo'></Logo>
+            <Logo></Logo>
         </Link>
         <div className='options'>
             <Link className='option' to='/shop'>Shop</Link>
